@@ -1,10 +1,11 @@
 class Shoe:
-    def __init__(self, id, gender_type, type, color, brand, size):
+    def __init__(self, id, gender_type, type, color, price, brand, size):
         self.id = id
         self.gender_type = gender_type
         self.type = type
         self.color = color
+        self.price = price
         self.brand = brand
         self.size = size
     def __str__(self):
-        return f"kod vyrobku:[{self.id}] {self.brand} {self.type}, {self.color}, veľkosť {self.size}, {self.gender_type}"
+        return f"kod vyrobku:[{self.id}] {self.brand} {self.type}, {self.color}, veľkosť {self.size}, {self.gender_type}, {self.price}"
